@@ -16,7 +16,7 @@ namespace SignalR.DataAccessLayer.Concrete
             //optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=SignalRDb;Trusted_Connection=True;");
 
             //Ev
-            optionsBuilder.UseSqlServer("Server = localhost\\SQLEXPRESS01; Database = SignalRDb; Trusted_Connection = True;");
+            optionsBuilder.UseSqlServer("Server = localhost; Database = SignalRDb; Trusted_Connection = True;");
             
 
         }
