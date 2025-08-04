@@ -13,10 +13,10 @@ namespace SignalR.DataAccessLayer.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //İşyeri
-            //optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=SignalRDb;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=SignalRDb;Trusted_Connection=True;");
 
             //Ev
-            optionsBuilder.UseSqlServer("Server = localhost; Database = SignalRDb; Trusted_Connection = True;");
+            //optionsBuilder.UseSqlServer("Server = localhost; Database = SignalRDb; Trusted_Connection = True;");
             
 
         }
