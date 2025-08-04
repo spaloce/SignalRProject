@@ -13,7 +13,7 @@ namespace SignalR.DataAccessLayer.Migrations
                 table: "Products",
                 type: "int",
                 nullable: false,
-                defaultValue: 0);
+                defaultValue: 1);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_CategoryId",
