@@ -1,0 +1,51 @@
+﻿@model CreateBookingDto
+@{
+    ViewData["Title"] = "CreateBooking";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Rezervasyon İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Rezervasyon Ekleme Sayfası</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="name">Rezervasyon Yapılacak Kişi</label>
+                                <input type="text" class="form-control" asp-for="Name" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Rezervasyon Telefon No</label>
+                                <input type="tel" rows="5" class="form-control" asp-for="Phone" id="phone"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">Rezervasyon Mail Adresi</label>
+                                <input type="email" class="form-control" asp-for="Email" id="mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="personcount">Rezervasyon Kişi Sayısı</label>
+                                <input type="number" class="form-control" asp-for="PersonCount" id="personcount">
+                            </div>
+                            <div class="form-group">
+                                <label for="tarih">Rezervasyon Tarihi</label>
+                                <input type="date" class="form-control" asp-for="Date" id="tarih">
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-primary">Rezervasyon Oluştur</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,53 @@
+﻿@model UpdateBookingDto
+@{
+    ViewData["Title"] = "UpdateBooking";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Rezervasyon İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Rezervasyon Ekleme Sayfası</div>
+                        </div>
+                        <input type="hidden" asp-for="BookingId" />
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="title">Rezervasyon Yapılacak Kişi</label>
+                                <input type="text" class="form-control" asp-for="Name" id="title">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Rezervasyon Telefon No</label>
+                                <input type="tel" rows="5" class="form-control" asp-for="Phone" id="description"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="imageurl">Rezervasyon Mail Adresi</label>
+                                <input type="email" class="form-control" asp-for="Email" id="imageurl">
+                            </div>
+                            <div class="form-group">
+                                <label for="imageurl">Rezervasyon Kişi Sayısı</label>
+                                <input type="number" class="form-control" asp-for="PersonCount" id="imageurl">
+                            </div>
+                            <div class="form-group">
+                                <label for="imageurl">Rezervasyon Tarihi</label>
+                                <input type="date" class="form-control" asp-for="Date" id="imageurl">
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-primary">Rezervasyon Oluştur</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+

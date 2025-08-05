@@ -1,36 +1,38 @@
-﻿@model UpdateAboutDto
-
+﻿@model CreateDiscountDto
 @{
-    ViewData["Title"] = "CreateAbout";
+    ViewData["Title"] = "CreateDiscount";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-
 <div class="content">
     <div class="container-fluid">
-        <h4 class="page-title">Hakkımızda İşlemleri</h4>
+        <h4 class="page-title">Ürün İndirim İşlemleri</h4>
         <div class="row">
             <div class="col-md-12">
                 <form method="post">
                     <div class="card">
                         <div class="card-header">
-                            <div class="card-title">Hakkımızda Ekleme Sayfası</div>
+                            <div class="card-title">Ürün İndirim Ekleme Sayfası</div>
                         </div>
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="title">Hakkımızda Title Giriniz</label>
+                                <label for="title">Ürün Giriniz</label>
                                 <input type="text" class="form-control" asp-for="Title" id="title">
                             </div>
                             <div class="form-group">
-                                <label for="description">Hakkımızda Açıklama Giriniz</label>
+                                <label for="amount">İndirim Oranı Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Amount" id="amount"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">İndirim Açıklamasını Giriniz</label>
                                 <textarea type="text" rows="5" class="form-control" asp-for="Description" id="description"></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="imageurl">Hakkımızda Resim Giriniz</label>
+                                <label for="imageurl">Ürün İndirim Resim Giriniz</label>
                                 <input type="text" class="form-control" asp-for="ImageUrl" id="imageurl">
                             </div>
                         </div>
                         <div class="card-action">
-                            <button class="btn btn-primary">Hakkımızda Yazısını Ekle</button>
+                            <button class="btn btn-primary">Ürün İndirim Yazısını Ekle</button>
                         </div>
                     </div>
                 </form>
