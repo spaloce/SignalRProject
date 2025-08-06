@@ -3,7 +3,7 @@
 namespace SignalRWebUI.Controllers
 {
     public class SignalRDefaultController : Controller
-    {
+    {//test
         public IActionResult Index()
         {
             return View();
