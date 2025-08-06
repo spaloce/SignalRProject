@@ -16,6 +16,7 @@ namespace SignalR.BusinessLayer.Concrete
         {
             _productDal = productDal;
         }
+
         public void TAdd(Product entity)
         {
             _productDal.Add(entity);
@@ -39,6 +40,41 @@ namespace SignalR.BusinessLayer.Concrete
         public List<Product> TGetProductsWithCategories()
         {
             return _productDal.GetProductsWithCategories();
+        }
+
+        public int TProductCount()
+        {
+            return _productDal.ProductCount();
+        }
+
+        public int TProductCountByCategoryNameDrink()
+        {
+            return _productDal.ProductCountByCategoryNameDrink();
+        }
+
+        public int TProductCountByCategoryNameHamburger()
+        {
+            return _productDal.ProductCountByCategoryNameHamburger();
+        }
+
+        public string TProductNameBuyMaxPrice()
+        {
+            return _productDal.ProductNameBuyMaxPrice();
+        }
+
+        public string TProductNameBuyMinPrice()
+        {
+            return _productDal.ProductNameBuyMinPrice();
+        }
+
+        public decimal TProductPriceAvg()
+        {
+            return _productDal.ProductPriceAvg();
+        }
+
+        public decimal TProductPriceByHamburger()
+        {
+            return _productDal.ProductPriceByHamburger();
         }
 
         public void TUpdate(Product entity)

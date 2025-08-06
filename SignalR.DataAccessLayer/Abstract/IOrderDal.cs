@@ -2,15 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SignalR.DataAccessLayer.Abstract
 {
-    public interface ICategoryDal : IGenericDal<Category>
+    public interface IOrderDal:IGenericDal<Order>
     {
-        public int CategoryCount();
-        public int ActiveCategoryCount();
-        public int PassiveCategoryCount();
+        public int TotalOrderCount();
+        public int ActiveOrderCount();
+        public decimal LastOrderPrice();
     }
 }
