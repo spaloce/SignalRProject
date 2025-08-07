@@ -17,5 +17,7 @@
 --Son Sİpariş Tutarı
 --Kasadaki Tutar
 --Bugünkü Kazanç
---ortalama Sipariş Tutarı
 --masa sayısı
+
+------------------------------------------------------------------------------------
+
